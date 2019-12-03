@@ -1,0 +1,1 @@
+{"version":3,"file":"Class.js","sourceRoot":"","sources":["../../src/schema/Class.ts"],"names":[],"mappings":";;;;;;;;;;;AAAA,+CAAsD;AACtD,uCAAgC;AAEhC,IAAqB,KAAK,GAA1B,MAAqB,KAAK;CAQzB,CAAA;AANG;IADC,oBAAK,CAAC,IAAI,CAAC,EAAE,CAAC,kBAAG,CAAC;;iCACR;AAGX;IADC,oBAAK,EAAE;;mCACK;AAEb;IADC,oBAAK,EAAE;8BACC,iBAAO;sCAAC;AAPA,KAAK;IADzB,yBAAU,EAAE;GACQ,KAAK,CAQzB;kBARoB,KAAK"}
