@@ -4,10 +4,10 @@ import Class from './Class';
 @ObjectType()
 export default class Student {
     @Field(type => Int)
-    id: number;
+    id!: number;
 
     @Field()
-    class: Class;
+    class!: Class;
     @Field()
-    person: Person;
+    person!: Person;
 }

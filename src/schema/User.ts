@@ -1,12 +1,14 @@
 import { Field, Int, ObjectType } from "type-graphql";
-import Section from './Section';
+import Person from './Person';
 @ObjectType()
 export default class Class {
     @Field(type => Int)
     id!: number;
 
     @Field()
-    name!: string;
+    userName!: string;
     @Field()
-    section!: Section;
+    password!: string;
+    @Field()
+    person!: Person;
 }

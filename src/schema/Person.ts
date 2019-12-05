@@ -3,16 +3,18 @@ import { Field, Int, ObjectType } from "type-graphql";
 @ObjectType()
 export default class Person {
     @Field(type => Int)
-    id: number;
+    id!: number;
 
     @Field()
-    firstName: string;
+    firstName!: string;
     @Field()
-    lastName: string;
+    lastName!: string;
     @Field()
-    address: string;
+    address!: string;
     @Field()
-    mobileNo: string;
+    mobileNo!: string;
     @Field()
-    phonoNo: string;
+    phonoNo!: string;
+    @Field()
+    email!: string;
 }
