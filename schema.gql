@@ -9,6 +9,17 @@ type Class {
   section: Section!
 }
 
+type LoginResponse {
+  accessToken: String!
+  name: String!
+  email: String!
+}
+
+type Mutation {
+  Register(password: String!, email: String!, lastName: String!, firstName: String!): Boolean!
+  Login(password: String!, email: String!): LoginResponse!
+}
+
 type Person {
   id: Int!
   firstName: String!
@@ -16,13 +27,19 @@ type Person {
   address: String!
   mobileNo: String!
   phonoNo: String!
+  email: String!
 }
 
 type Query {
-  fetchTasks: [Student!]!
+  fetchTasks: [Person!]!
   personByName(name: String!): Person
   getStudents(id: Float!): Student
-  getStudentsByClass(id: Float!): [Student!]
+  fetchStudents: [Student!]!
+  getStudentsByPersonId(id: Float!): Student
+  getStudentsByClassId(id: Float!): [Student!]
+  hello: String!
+  getUsers: [User!]!
+  Me: User
 }
 
 type Section {
@@ -34,4 +51,12 @@ type Student {
   id: Int!
   class: Class!
   person: Person!
+}
+
+type User {
+  id: ID!
+  firstName: String!
+  lastName: String!
+  email: String!
+  password: String!
 }

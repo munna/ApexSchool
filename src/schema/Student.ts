@@ -6,8 +6,8 @@ export default class Student {
     @Field(type => Int)
     id!: number;
 
-    @Field()
+    @Field(type => Class)
     class!: Class;
-    @Field()
+    @Field(type => Person)
     person!: Person;
 }

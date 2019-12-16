@@ -5,16 +5,16 @@ export default class Person {
     @Field(type => Int)
     id!: number;
 
-    @Field()
+    @Field(type => String)
     firstName!: string;
-    @Field()
+    @Field(type => String)
     lastName!: string;
-    @Field()
+    @Field(type => String)
     address!: string;
-    @Field()
+    @Field(type => String)
     mobileNo!: string;
-    @Field()
+    @Field(type => String)
     phonoNo!: string;
-    @Field()
+    @Field(type => String)
     email!: string;
 }

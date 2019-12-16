@@ -5,8 +5,8 @@ export default class Class {
     @Field(type => Int)
     id!: number;
 
-    @Field()
+    @Field(type => String)
     name!: string;
-    @Field()
+    @Field(type => Section)
     section!: Section;
 }
